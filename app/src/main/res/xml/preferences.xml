@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="check_vod"
+        android:title="Show Video Of Day"
+        android:summaryOff="Hide Video of Day Player After Sign In"
+        android:summaryOn="Show Video Of Day Player After Sign In"
+        android:defaultValue="true"/>
+
+    <SwitchPreference
+        android:title="Use Dark Theme"
+        android:summary="Change app theme to dark background"
+        android:defaultValue="false"
+        android:key="toggle_theme" />
+
+    <SwitchPreference
+        android:key="enable_reminders"
+        android:title="Enable Reminder"
+        android:summary="Get a reminder 10 minutes before the day's session begins"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>

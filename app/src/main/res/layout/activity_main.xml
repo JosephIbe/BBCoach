@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.TestWeekHeaderViewActivity">
+
+    <sportsapp.sashi.in.sportsapp.customviews.WeekHeaderView
+        android:id="@+id/weekHV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:firstDayOfWeek2="sunday"
+        app:headerBackgroundColor="#455964"
+        app:headerDayLabelTextSize="15sp"
+        app:headerDayLabelTodayTextColor="@android:color/holo_red_dark"
+        app:headerFocusBackgroundColor="#ffffff"
+        app:headerFocusSameDayBackgroundColor="#ffffff"
+        app:headerRowGap="35dp"
+        app:headerWeekLabelTextColor="#ffffff"
+        app:headerWeekLabelTextSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/fragHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weekHV"/>
+
+</RelativeLayout>

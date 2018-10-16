@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SessionsCalendarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/back"
+                android:padding="10dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sessions Overview"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        app:eventTextColor="@color/colorPrimaryDark"
+        app:textSize="12sp"
+        app:hourHeight="60dp"
+        app:headerColumnPadding="8dp"
+        app:headerColumnTextColor="@color/colorAccent"
+        app:headerRowPadding="12dp"
+        app:columnGap="8dp"
+        app:noOfVisibleDays="3"
+        app:headerRowBackgroundColor="#c3c3c3"
+        app:dayBackgroundColor="#dcd9cd"
+        app:todayBackgroundColor="#00FF00"
+        app:headerColumnBackground="#ffffffff"/>
+
+</RelativeLayout>

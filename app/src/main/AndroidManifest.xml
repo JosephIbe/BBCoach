@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sportsapp.sashi.in.sportsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".extras.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="eco_sports_app.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="01" />
+
+            <!--android:authorities="com.activeandroid.content.ContentProvider"-->
+        <provider
+            android:authorities="sportsapp.sashi.in.sportsapp"
+            android:name="sportsapp.sashi.in.sportsapp.providers.DBProvider"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".ui.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activities.LoginActivity" />
+        <activity android:name=".ui.activities.HomeActivity" />
+        <activity android:name=".ui.activities.SettingsActivity" />
+        <activity android:name=".ui.activities.ChooseBatchActivity" />
+        <activity android:name=".ui.activities.SessionsCalendarActivity"/>
+        <activity android:name=".ui.activities.AllPlayersActivity"/>
+        <activity android:name=".ui.activities.CoachProfileActivity"/>
+        <activity android:name=".ui.activities.FeedbackActivity"/>
+        <activity android:name=".ui.activities.MarkAttendanceActivity"/>
+        <activity android:name=".ui.activities.PlayerDetailsActivity"/>
+        <activity android:name=".ui.activities.StartSessionActivity"/>
+        <activity android:name=".ui.activities.ViewSessionActivity"/>
+
+    </application>
+
+</manifest>

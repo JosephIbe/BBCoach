@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "809301447646",
+    "firebase_url": "https://sportsecoandroid.firebaseio.com",
+    "project_id": "sportsecoandroid",
+    "storage_bucket": "sportsecoandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809301447646:android:6200aa7c7722d12e",
+        "android_client_info": {
+          "package_name": "sportsapp.sashi.in.sportsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809301447646-22neh5hnr1778ktn3c2sprd03thbfk03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sportsapp.sashi.in.sportsapp",
+            "certificate_hash": "a25360c6e47fb3dd4f2003abc7135e7f773b449b"
+          }
+        },
+        {
+          "client_id": "809301447646-9qe9qekihnnajtpjslgif2tksiamrd15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe13vutww3MlynO1HWUKM0II1yHy1h6Xs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809301447646-9qe9qekihnnajtpjslgif2tksiamrd15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

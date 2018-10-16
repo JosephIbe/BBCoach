@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    android:id="@+id/headerProfileLayout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headerIconImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/profileHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Abhiram Labhani"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:layout_below="@id/headerIconImg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_sports_eco"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/profileHeaderText"
+        android:layout_below="@+id/headerIconImg"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

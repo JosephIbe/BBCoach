@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/appTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SportsEco"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appTV"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="28dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_input_bkg"
+                android:padding="14dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:drawableStart="@drawable/email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/pwdET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_input_bkg"
+                android:padding="14dp"
+                android:hint="@string/pwd_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:drawableStart="@drawable/lock"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/login_btn_bkg"
+            android:padding="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:id="@+id/forgotTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_pwd"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="19dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
